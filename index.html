@@ -11,8 +11,9 @@
 </head>
 
 <body>
-    <div class="container text-center  justify-content-center align-items-center h-100 "
-        style="max-width: 400px; background-color:#fab1a0 ;">
+    <center class="class1">
+         <div class="container text-center  justify-content-center align-items-center h-100  "
+        style="max-width: 400px; background-color:#fab1a0 ; padding-top: 5px; padding-bottom: 5px;">
         <div class="row mb-3">
             <div class="col-12">
                 <textarea class="form-control text-end fs-4 bg-dark text-white" id="field1" rows="1"
@@ -78,7 +79,7 @@
                     <button type="button" class="btn-outline theme-accent" onclick="showValue('3')">3</button>
                 </div>
                 <div class="col">
-                    <button type="button" class="btn-outline theme-accent" onclick="showValue('+');add()">+</button>
+                    <button type="button" class="btn-outline theme-accent" onclick="showValue('+')">+</button>
                 </div>
             </div>
             <div class="row">
@@ -96,13 +97,20 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col-4 h-100 d-flex">
+               
+            </div>
             </div>
 
-            <div class="col-4 h-100 d-flex">
-                <textarea class="form-control text-end fs-4 bg-dark text-white h-100" id="field3"
-                readonly>0</textarea>
-            </div>
+            
         </div>
+        <div class="container">
+             <textarea class="form-control text-end fs-4 bg-dark text-white h-100" id="field3"
+                readonly>0</textarea>
+        </div>
+    </center>
+   
+        
         <script src="app.js"></script>
 </body>
 

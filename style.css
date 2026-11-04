@@ -1,4 +1,9 @@
 *{
     margin: 100px;
-    padding: flex;
+    
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.class1{
+    justify-content: center;
 }

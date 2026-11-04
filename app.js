@@ -1,4 +1,5 @@
 
+let calHistory =[];
 function showValue(val){
     if(document.getElementById('field1').value === '0'){
         document.getElementById('field1').value = val;
@@ -37,11 +38,17 @@ function calculate(){
     }if(operator == "-"){
         result=num1-num2;
     }
-    
     document.getElementById("field2").value=result;
+
+   
+    
+    let history =txtfield+"="+result;
+    calHistory.push(history);
 }
 
 function showHistory(){
-    let historyfield=document.getElementById("field3").value;
-    historyfield=document.getElementById("field1").value + "=" + document.getElementById("field2").value ;
+    document.getElementById("field3").innerHTML = "";
+    for(let data of calHistory){
+        document.getElementById("field3").innerHTML += data + "\n"; 
+    }
 }
