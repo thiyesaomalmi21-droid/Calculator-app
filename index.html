@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="style Sheet" href="style.css">
+</head>
+
+<body>
+    <div class="container text-center  justify-content-center align-items-center h-100 "
+        style="max-width: 400px; background-color:#fab1a0 ;">
+        <div class="row mb-3">
+            <div class="col-12">
+                <textarea class="form-control text-end fs-4 bg-dark text-white" id="field1" rows="1"
+                    readonly>0</textarea>
+                <textarea class="form-control text-end fs-4 bg-dark text-white" id="field2" rows="1"
+                    readonly>0</textarea>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn-outline theme-accent" onclick="showValue('C')">C</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn-outline theme-accent" onclick="showHistory()">history</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn-outline theme-accent" onclick="showValue('')"></button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn-outline theme-accent" value="/" onclick="showValue('')"></button>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn-outline theme-accent" onclick="showValue('7')">7</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn-outline theme-accent" onclick="showValue('8')">8</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn-outline theme-accent" onclick="showValue('9')">9</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn-outline theme-accent" value="/" onclick="showValue('/')">/</button>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn-outline theme-accent" onclick="showValue('4')">4</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn-outline theme-accent" onclick="showValue('5')">5</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn-outline theme-accent" onclick="showValue('6')">6</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn-outline theme-accent" onclick="showValue('*')">*</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn-outline theme-accent" onclick="showValue('1')">1</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn-outline theme-accent" onclick="showValue('2')">2</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn-outline theme-accent" onclick="showValue('3')">3</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn-outline theme-accent" onclick="showValue('+');add()">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn-outline theme-accent" onclick="showValue('0')">0</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn-outline theme-accent" onclick="showValue('.')">.</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn-outline theme-accent" onclick="calculate()">=</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn-outline theme-accent" onclick="showValue('-')">-</button>
+                </div>
+            </div>
+            <div class="row">
+            </div>
+
+            <div class="col-4 h-100 d-flex">
+                <textarea class="form-control text-end fs-4 bg-dark text-white h-100" id="field3"
+                readonly>0</textarea>
+            </div>
+        </div>
+        <script src="app.js"></script>
+</body>
+
+</html>
