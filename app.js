@@ -52,6 +52,15 @@ function showHistory(){
         document.getElementById("field3").innerHTML += data + "\n"; 
     }
 }
-function delete(){
+
+function deleteAll(){
+   // console.log("Hii");
+   if(document.getElementById("field1").value != "0"){
+    document.getElementById("field1").innerText="";
+   }
+   if(document.getElementById("field2").value != "0"){
+     document.getElementById("field2").innerText="";
+   }
     
+   
 }
