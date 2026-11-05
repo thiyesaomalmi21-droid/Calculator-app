@@ -12,83 +12,87 @@
 
 <body>
 
-    <div class="container w-50 h-50">
+    <div class="container " style="max-width: 40%;height: 100%; background-color:#a6a0fa ; padding-top: 5px; padding-bottom: 5px; border-radius: 1%;">
         <textarea class="form-control text-end fs-4 bg-dark text-white" id="field1" rows="1" readonly>0</textarea>
         <textarea class="form-control text-end fs-4 bg-dark text-white" id="field2" rows="1" readonly>0</textarea>
 
         <table style="height: 30%; width: 100%;">
             <tr>
                 <td >
-                    <input type="button" value="C">
+                    <input type="button" value="AC" class="btn btn-light w-100 h-100 " onclick="delete()">
                 </td>
                 <td>
-                    <input type="button" value="history">
+                    <input type="button" value="history" class="btn btn-light w-100 h-100" onclick="showHistory()">
                 </td>
                 <td>
-                    <input type="button" value="">
+                    <input type="button" value="" class="btn btn-light w-100 h-100" onclick="showValue('')">
                 </td>
                 <td>
-                    <input type="button" value="">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="button" value="7">
-                </td>
-                <td>
-                    <input type="button" value="8">
-                </td>
-                <td>
-                    <input type="button" value="9">
-                </td>
-                <td>
-                    <input type="button" value="/">
+                    <input type="button" value="" class="btn btn-light w-100 h-100" onclick="showValue('')">
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="button" value="4">
+                    <input type="button" value="7" class="btn btn-light w-100 h-100" onclick="showValue('7')">
                 </td>
                 <td>
-                    <input type="button" value="5">
+                    <input type="button" value="8" class="btn btn-light w-100 h-100" onclick="showValue('8')">
                 </td>
                 <td>
-                    <input type="button" value="6">
+                    <input type="button" value="9" class="btn btn-light w-100 h-100" onclick="showValue('9')">
                 </td>
                 <td>
-                    <input type="button" value="*">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="button" value="1">
-                </td>
-                <td>
-                    <input type="button" value="2">
-                </td>
-                <td>
-                    <input type="button" value="3">
-                </td>
-                <td>
-                    <input type="button" value="+">
+                    <input type="button" value="/" class="btn btn-light w-100 h-100" onclick="showValue('/')"> 
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="button" value="0">
+                    <input type="button" value="4" class="btn btn-light w-100 h-100" onclick="showValue('4')">
                 </td>
                 <td>
-                    <input type="button" value=".">
+                    <input type="button" value="5" class="btn btn-light w-100 h-100" onclick="showValue('5')">
                 </td>
                 <td>
-                    <input type="button" value="=">
+                    <input type="button" value="6" class="btn btn-light w-100 h-100" onclick="showValue('6')">
                 </td>
                 <td>
-                    <input type="button" value="-">
+                    <input type="button" value="*" class="btn btn-light w-100 h-100" onclick="showValue('*')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="1" class="btn btn-light w-100 h-100" onclick="showValue('1')">
+                </td>
+                <td>
+                    <input type="button" value="2"class="btn btn-light w-100 h-100" onclick="showValue('2')">
+                </td>
+                <td>
+                    <input type="button" value="3" class="btn btn-light w-100 h-100" onclick="showValue('3')">
+                </td>
+                <td>
+                    <input type="button" value="+" class="btn btn-light w-100 h-100" onclick="showValue('+')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="0" class="btn btn-light w-100 h-100" onclick="showValue('0')">
+                </td>
+                <td>
+                    <input type="button" value="." class="btn btn-light w-100 h-100" onclick="showValue('.')">
+                </td>
+                <td>
+                    <input type="button" value="=" class="btn btn-light w-100 h-100" onclick="calculate()">
+                </td>
+                <td>
+                    <input type="button" value="-" class="btn btn-light w-100 h-100" onclick="showValue('-')">
                 </td>
             </tr>
             
         </table>
+        <div class="container">
+             <textarea class="form-control text-end fs-4 bg-dark text-white h-100" id="field3"
+                readonly>0</textarea>
+        </div>
     </div>
 
     <!-- <center class="class1" >

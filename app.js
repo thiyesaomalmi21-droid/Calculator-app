@@ -52,3 +52,6 @@ function showHistory(){
         document.getElementById("field3").innerHTML += data + "\n"; 
     }
 }
+function delete(){
+    
+}
