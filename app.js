@@ -54,13 +54,11 @@ function showHistory(){
 }
 
 function deleteAll(){
-   // console.log("Hii");
-   if(document.getElementById("field1").value != "0"){
-    document.getElementById("field1").innerText="";
-   }
-   if(document.getElementById("field2").value != "0"){
-     document.getElementById("field2").innerText="";
-   }
-    
-   
+    document.getElementById("field1").value="";    
+    document.getElementById("field2").value="";    
+        
+}
+function backSpace(){
+    let display=document.getElementById("field1");
+    display.value=display.value.slice(0,-1);
 }
